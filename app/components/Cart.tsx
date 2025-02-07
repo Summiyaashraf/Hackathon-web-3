@@ -11,8 +11,9 @@ interface Product {
   name: string;
   price: number;
   quantity: number;
-  images?: any[];
+  images?: { url: string }[]; // Specify the type for images
 }
+
 
 interface CartContextType {
   onRemove: (product: Product) => void;
